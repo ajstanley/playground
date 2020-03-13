@@ -1,0 +1,5 @@
+name: 'playground'
+type: module
+description: 'Experimental code'
+core: 8.x
+package: 'Custom'

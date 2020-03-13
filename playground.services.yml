@@ -1,0 +1,4 @@
+services:
+  playground.gridder:
+    class: Drupal\playground\Services\GridComplete
+    arguments: ['@http_client']

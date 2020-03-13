@@ -1,0 +1,8 @@
+
+playground.default_controller_test:
+  path: '/playground/test'
+  defaults:
+    _controller: '\Drupal\playground\Controller\DefaultController::test'
+    _title: 'codetester'
+  requirements:
+    _permission: 'access content'

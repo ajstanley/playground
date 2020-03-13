@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains playground.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function playground_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the playground module.
+    case 'help.page.playground':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Experimental code') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function playground_theme() {
+  return [
+    'playground' => [
+        'variables' => ['test_var' => 'gotcha'],
+    ],
+  ];
+}
