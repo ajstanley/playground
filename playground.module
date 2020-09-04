@@ -29,7 +29,10 @@ function playground_help($route_name, RouteMatchInterface $route_match) {
 function playground_theme() {
   return [
     'playground' => [
-        'variables' => ['test_var' => 'gotcha'],
+        'variables' => [
+          'test_var' => 'gotcha',
+          'new_var' => 'TBD',
+        ],
     ],
   ];
 }
